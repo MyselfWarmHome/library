@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+package cn.itcast.main;
+
+import java.util.Scanner;
+
+import cn.itcast.dao.UserDao;
+
+/**
+ * 作者：	王金龙
+ * 凌晨1:04:23
+ */
+public class LibararyMain {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("****************************************");
+		System.out.println("*                                      *");
+		System.out.println("*                                      *");
+		System.out.println("*                                      *");
+		System.out.println("*                                      *");
+		System.out.println("*             java图书馆                             		   *");
+		System.out.println("*                                      *");
+		System.out.println("*                                      *");
+		System.out.println("*                                      *");
+		System.out.println("*                                      *");
+		System.out.println("****************************************");
+		Scanner scanner = new Scanner(System.in);
+		UserDao user = new UserDao();
+		
+		while(true){
+			System.out.println("请选择功能：A 注册          B 登录       Q 退出系统");
+			String option = scanner.next();
+			if(option.equalsIgnoreCase("a")){
+				user.reg();
+			}else if(option.equalsIgnoreCase("b")){
+				user.log();
+			}else if(option.equalsIgnoreCase("q")){
+				System.exit(0);
+			}else{
+				System.out.println("您输入有误，请重新输入......");
+			}
+		}
+		
+	}
+
+}

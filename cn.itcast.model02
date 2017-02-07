@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+package cn.itcast.model;
+
+/**
+ * 作者：	王金龙
+ * 上午12:12:10
+ */
+/**
+ * 作者：	王金龙
+ * 上午12:16:33
+ */
+public class User {
+	private String userName;
+	private String password;
+
+	public User() {
+		super();
+	}
+
+	public User(String userName, String password) {
+		super();
+		this.userName = userName;
+		this.password = password;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param userName the userName to set
+	 */
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String toString() {
+		return "用户名:"+ this.userName +" 密码："+ this.password;
+	}
+	
+}

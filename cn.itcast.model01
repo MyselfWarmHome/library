@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package cn.itcast.model;
+
+/**
+ * 作者：	王金龙
+ * 凌晨1:02:10
+ */
+public class Book {
+	String bookName;
+}
