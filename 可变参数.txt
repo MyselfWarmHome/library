@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.auto;
+
+/**
+ * 作者：	王金龙
+ * 下午12:46:10
+ * @version 1.0
+ */
+//定义一个加法函数
+public class Auto {
+
+	public static void main(String[] args) {
+		//int[] arr={1,2,34,3};
+		add();
+
+	}
+	public static void add(int... arr){
+		int result=0;
+		for(int item : arr){
+			result+=item;
+		}
+		System.out.println("总和:"+result);
+	}
+}
